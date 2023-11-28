@@ -15,6 +15,10 @@
 		3190D8732B1667BA004C7FC6 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8722B1667BA004C7FC6 /* EditView.swift */; };
 		3190D8752B1667DE004C7FC6 /* ModelItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8742B1667DE004C7FC6 /* ModelItems.swift */; };
 		3190D8772B166862004C7FC6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8762B166862004C7FC6 /* PlayerView.swift */; };
+		3190D8792B1668DC004C7FC6 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8782B1668DC004C7FC6 /* RadioView.swift */; };
+		3190D87B2B166900004C7FC6 /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D87A2B166900004C7FC6 /* LazyHGridView.swift */; };
+		3190D87D2B166920004C7FC6 /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D87C2B166920004C7FC6 /* LazyVGridView.swift */; };
+		3190D87F2B16693E004C7FC6 /* ModelItemsForRadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D87E2B16693E004C7FC6 /* ModelItemsForRadioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		3190D8722B1667BA004C7FC6 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		3190D8742B1667DE004C7FC6 /* ModelItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelItems.swift; sourceTree = "<group>"; };
 		3190D8762B166862004C7FC6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		3190D8782B1668DC004C7FC6 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		3190D87A2B166900004C7FC6 /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
+		3190D87C2B166920004C7FC6 /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
+		3190D87E2B16693E004C7FC6 /* ModelItemsForRadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelItemsForRadioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,10 @@
 		3190D86F2B166729004C7FC6 /* RadioView */ = {
 			isa = PBXGroup;
 			children = (
+				3190D8782B1668DC004C7FC6 /* RadioView.swift */,
+				3190D87A2B166900004C7FC6 /* LazyHGridView.swift */,
+				3190D87C2B166920004C7FC6 /* LazyVGridView.swift */,
+				3190D87E2B16693E004C7FC6 /* ModelItemsForRadioView.swift */,
 			);
 			name = RadioView;
 			sourceTree = "<group>";
@@ -182,11 +194,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3190D8612B1664BA004C7FC6 /* ContentView.swift in Sources */,
+				3190D8792B1668DC004C7FC6 /* RadioView.swift in Sources */,
 				3190D8752B1667DE004C7FC6 /* ModelItems.swift in Sources */,
 				3190D8712B166789004C7FC6 /* LibraryView.swift in Sources */,
 				3190D8772B166862004C7FC6 /* PlayerView.swift in Sources */,
+				3190D87F2B16693E004C7FC6 /* ModelItemsForRadioView.swift in Sources */,
 				3190D8732B1667BA004C7FC6 /* EditView.swift in Sources */,
+				3190D87D2B166920004C7FC6 /* LazyVGridView.swift in Sources */,
 				3190D85F2B1664BA004C7FC6 /* MyAppleMusicApp.swift in Sources */,
+				3190D87B2B166900004C7FC6 /* LazyHGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
