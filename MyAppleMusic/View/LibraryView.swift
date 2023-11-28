@@ -1,82 +1,22 @@
 import SwiftUI
 
-struct ContentView: View {
-    @State private var isEditing = false
+struct LibraryView: View {
     var body: some View {
-        ZStack(alignment: .bottom) {
-            TabView {
-                NavigationView {
-                    //                    if isEditing {
-                    //                        EditView()
-                    //                    } else {
-                    //                        LibraryView()
-                    //                        }
-                    //                        .navigationTitle("Медиатека")
-                    //                        .navigationBarItems(trailing:
-                    //                                                Button(action: {
-                    //                            self.isEditing.toggle()
-                    //                        }) {
-                    //                            Text(self.isEditing ? "Готово" : "Править")
-                    //                                .foregroundColor(Color.red)
-                    //                        }
-                    //                        )
-                    Group {
-                        if isEditing {
-                            EditView()
-                                .navigationTitle("Медиатека")
-                                .navigationBarItems(trailing:
-                                                        Button(action: {
-                                    self.isEditing.toggle()
-                                }) {
-                                    Text("Готово")
-                                        .foregroundColor(Color.red)
-                                }
-                                )
-                        } else {
-                            LibraryView()
-                                .navigationTitle("Медиатека")
-                                .navigationBarItems(trailing:
-                                                        Button(action: {
-                                    self.isEditing.toggle()
-                                }) {
-                                    Text("Править")
-                                        .foregroundColor(Color.red)
-                                }
-                                )
-                        }
-                    }
-                }
-                .tabItem {
-                    Image(systemName: "music.note.house.fill")
-                    Text("Медиатека")
-                        .foregroundColor(Color.gray)
-                }
-                
-                RadioView()
-                    .tabItem {
-                        Image(systemName: "dot.radiowaves.left.and.right")
-                        Text("Радио")
-                            .foregroundColor(Color.gray)
-                    }
-                
-                Text("")
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                        Text("Поиск")
-                            .foregroundColor(Color.gray)
-                    }
+            VStack {
+                Spacer()
+                Text("Ищете свою музыку?")
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                Text("Здесь появиться купленная Вами в \n iTunes Store музыка")
+                    .foregroundColor(Color.gray)
+                    .multilineTextAlignment(.center)
+                Spacer()
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             .accentColor(.red)
-            .onAppear () {
-                UITabBar.appearance().backgroundColor = .systemGray6
-                UITabBar.appearance().barTintColor = .systemGray6
-            }
-            PlayerView()
-                .padding(.bottom, 60)
-        }
     }
 }
 
 #Preview {
-    ContentView()
+    LibraryView()
 }
