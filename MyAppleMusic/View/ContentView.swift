@@ -59,7 +59,7 @@ struct ContentView: View {
                             .foregroundColor(Color.gray)
                     }
                 
-                Text("")
+                SearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
