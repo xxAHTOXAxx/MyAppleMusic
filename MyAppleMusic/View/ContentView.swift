@@ -6,20 +6,6 @@ struct ContentView: View {
         ZStack(alignment: .bottom) {
             TabView {
                 NavigationView {
-                    //                    if isEditing {
-                    //                        EditView()
-                    //                    } else {
-                    //                        LibraryView()
-                    //                        }
-                    //                        .navigationTitle("Медиатека")
-                    //                        .navigationBarItems(trailing:
-                    //                                                Button(action: {
-                    //                            self.isEditing.toggle()
-                    //                        }) {
-                    //                            Text(self.isEditing ? "Готово" : "Править")
-                    //                                .foregroundColor(Color.red)
-                    //                        }
-                    //                        )
                     Group {
                         if isEditing {
                             EditView()
