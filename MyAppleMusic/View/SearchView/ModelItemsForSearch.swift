@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 struct ModelItemsForSearch: Equatable, Hashable {
     var itemImage: String

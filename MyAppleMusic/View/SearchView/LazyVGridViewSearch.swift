@@ -42,7 +42,7 @@ struct LazyVGridViewSearch: View {
                     Button(action: {
                         self.isEditing = false
                         self.searchText = ""
-                        
+
                     }) {
                         Text("Отменить")
                     }
@@ -62,17 +62,35 @@ struct LazyVGridViewSearch: View {
                 LazyVGrid(columns: columns, alignment: .center) {
                     ForEach (items, id: \.self) { item in
                         
-                        ZStack(alignment: .bottomLeading) {
-                            Image(item.itemImage)
+                        NavigationLink {
+                            SearchViewItem(genreOfMusic: item.genreOfMusic)
+                        } label: {
+                            Image (item.itemImage)
                                 .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 170, height: 140)
-                                .cornerRadius(8)
+                                .cornerRadius (10)
+                                .frame (height: 125)
+                                .overlay(alignment: .bottomLeading) {
+                                    Text(item.genreOfMusic)
+                                        .multilineTextAlignment(
+                                            .leading)
+                                        .font(.system(size: 13,
+                                                      weight: .bold))
+                                        .foregroundColor(.white)
+                                        .padding([.horizontal,
+                                                  .bottom])
+                                }
                             
-                            Text(item.genreOfMusic)
-                                .font(.subheadline)
-                                .foregroundColor(.white)
-                                .padding()
+//                        ZStack(alignment: .bottomLeading) {
+//                            Image(item.itemImage)
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fill)
+//                                .frame(width: 170, height: 140)
+//                                .cornerRadius(8)
+//                            
+//                            Text(item.genreOfMusic)
+//                                .font(.subheadline)
+//                                .foregroundColor(.white)
+//                                .padding()
                         }
                     }
                 }
