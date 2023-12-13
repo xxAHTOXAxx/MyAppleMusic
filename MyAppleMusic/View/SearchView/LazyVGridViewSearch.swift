@@ -61,7 +61,6 @@ struct LazyVGridViewSearch: View {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(columns: columns, alignment: .center) {
                     ForEach (items, id: \.self) { item in
-                        
                         NavigationLink {
                             SearchViewItem(genreOfMusic: item.genreOfMusic)
                         } label: {
@@ -79,18 +78,6 @@ struct LazyVGridViewSearch: View {
                                         .padding([.horizontal,
                                                   .bottom])
                                 }
-                            
-//                        ZStack(alignment: .bottomLeading) {
-//                            Image(item.itemImage)
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fill)
-//                                .frame(width: 170, height: 140)
-//                                .cornerRadius(8)
-//                            
-//                            Text(item.genreOfMusic)
-//                                .font(.subheadline)
-//                                .foregroundColor(.white)
-//                                .padding()
                         }
                     }
                 }

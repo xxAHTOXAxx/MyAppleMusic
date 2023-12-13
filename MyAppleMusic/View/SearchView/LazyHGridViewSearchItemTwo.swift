@@ -7,16 +7,24 @@ struct LazyHGridViewSearchItemTwo: View {
     let title: String = "Станции"
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(title)
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.leading, 18)
-            
+        VStack(alignment: .leading, spacing: 0) {
+            HStack {
+                Text(title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.leading, 18)
+                    .padding(.trailing, 160)
+                Button(action: {
+                }) {
+                    Text("См. все")
+                        .foregroundColor(Color.red)
+                }
+            }
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: rows) {
                     ForEach (items, id: \.self) { item in
                         VStack(alignment: .leading, spacing: 4) {
+                            
                             Image(item.itemImage)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)

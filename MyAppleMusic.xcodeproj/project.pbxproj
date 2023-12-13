@@ -28,6 +28,7 @@
 		3190D88F2B1E6EC7004C7FC6 /* LazyHGridViewSearchItemTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D88E2B1E6EC7004C7FC6 /* LazyHGridViewSearchItemTwo.swift */; };
 		3190D8912B1E6F27004C7FC6 /* ModelItemsForSearchViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8902B1E6F27004C7FC6 /* ModelItemsForSearchViewItem.swift */; };
 		3190D8932B27A9B4004C7FC6 /* Example2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8922B27A9B4004C7FC6 /* Example2.swift */; };
+		3190D8952B28F5BE004C7FC6 /* PlayerViewFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8942B28F5BE004C7FC6 /* PlayerViewFullScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		3190D88E2B1E6EC7004C7FC6 /* LazyHGridViewSearchItemTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridViewSearchItemTwo.swift; sourceTree = "<group>"; };
 		3190D8902B1E6F27004C7FC6 /* ModelItemsForSearchViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelItemsForSearchViewItem.swift; sourceTree = "<group>"; };
 		3190D8922B27A9B4004C7FC6 /* Example2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2.swift; sourceTree = "<group>"; };
+		3190D8942B28F5BE004C7FC6 /* PlayerViewFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewFullScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				3190D8762B166862004C7FC6 /* PlayerView.swift */,
+				3190D8942B28F5BE004C7FC6 /* PlayerViewFullScreen.swift */,
 			);
 			path = PlayerView;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				3190D88F2B1E6EC7004C7FC6 /* LazyHGridViewSearchItemTwo.swift in Sources */,
 				3190D85F2B1664BA004C7FC6 /* MyAppleMusicApp.swift in Sources */,
 				3190D8912B1E6F27004C7FC6 /* ModelItemsForSearchViewItem.swift in Sources */,
+				3190D8952B28F5BE004C7FC6 /* PlayerViewFullScreen.swift in Sources */,
 				3190D88A2B1E6B5F004C7FC6 /* SearchViewItem.swift in Sources */,
 				3190D87B2B166900004C7FC6 /* LazyHGridView.swift in Sources */,
 				3190D8822B167C46004C7FC6 /* SearchView.swift in Sources */,
