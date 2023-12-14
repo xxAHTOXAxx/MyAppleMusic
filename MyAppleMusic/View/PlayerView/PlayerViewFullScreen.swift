@@ -29,13 +29,14 @@ struct PlayerViewFullScreen: View {
             
             VStack(spacing: 0) {
                 
+                Spacer()
                 imageMusic
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200)
                     .cornerRadius(12)
-                    .padding(.bottom, 60)
-                
+                    
+               // Spacer()
                 
                 HStack {
                         VStack(alignment: .leading) {
@@ -49,7 +50,6 @@ struct PlayerViewFullScreen: View {
                                     .animation(Animation.linear(duration: 8).repeatForever(autoreverses: true))
                             }
                             .padding(.trailing, 40)
-                 
                     
                     Spacer()
                     
@@ -60,7 +60,7 @@ struct PlayerViewFullScreen: View {
                     }
                 }
                 .padding(.horizontal, 20)
-                .padding(.bottom, 20)
+                .padding(.bottom, 40)
                 .onAppear {
                     isAnimating = true
                 }
@@ -124,7 +124,31 @@ struct PlayerViewFullScreen: View {
                         .foregroundColor(.white)
                 }
                 .padding(.horizontal, 20)
-                .padding(.bottom)
+                .padding(.bottom, 40)
+                
+                HStack {
+                    Spacer()
+                    Button(action: {}) {
+                        Image(systemName: "quote.bubble")
+                            .font(.system(size: 20))
+                            .padding()
+                            .foregroundColor(.white)
+                    }
+                    Spacer()
+                    Button(action: {}) {
+                        Image(systemName: "airplayaudio")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                    }
+                    Spacer()
+                    Button(action: {}) {
+                        Image(systemName: "list.bullet")
+                            .font(.system(size: 20))
+                            .padding()
+                            .foregroundColor(.white)
+                    }
+                    Spacer()
+                }
                 
                 
                 .foregroundColor(.accentColor)
@@ -135,27 +159,7 @@ struct PlayerViewFullScreen: View {
                         .animation(.easeInOut)
             
         }
-//        .gesture(
-//            DragGesture()
-//                .onChanged { value in
-//                    let translation = value.translation
-//                    if translation.height > 0 {
-//                        self.dragOffset = translation
-//                    }
-//                }
-//                .onEnded { value in
-//                    withAnimation {
-//                        if self.dragOffset.height > 100 {
-//                            self.isFullScreen = false
-//                        }
-//                        self.dragOffset = .zero
-//                            }
-//                        }
-//                )
-//        .offset(y: dragOffset.height + accumulatedDragOffset)
-//        .animation(.easeInOut)
     }
-    
     
     func timeString(time: TimeInterval) -> String {
         let minutes = Int(time) / 60
