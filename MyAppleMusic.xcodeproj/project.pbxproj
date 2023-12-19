@@ -29,6 +29,11 @@
 		3190D8912B1E6F27004C7FC6 /* ModelItemsForSearchViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8902B1E6F27004C7FC6 /* ModelItemsForSearchViewItem.swift */; };
 		3190D8952B28F5BE004C7FC6 /* PlayerViewFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8942B28F5BE004C7FC6 /* PlayerViewFullScreen.swift */; };
 		3190D8992B2B854A004C7FC6 /* SearchMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8982B2B854A004C7FC6 /* SearchMusicView.swift */; };
+		3190D89B2B2F0197004C7FC6 /* SearchViewControllerUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D89A2B2F0197004C7FC6 /* SearchViewControllerUIKit.swift */; };
+		3190D89F2B2F028C004C7FC6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3190D89E2B2F028C004C7FC6 /* SnapKit */; };
+		3190D8A12B2F028C004C7FC6 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3190D8A02B2F028C004C7FC6 /* SnapKit-Dynamic */; };
+		3190D8A32B2F02F3004C7FC6 /* SearchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8A22B2F02F3004C7FC6 /* SearchHeader.swift */; };
+		3190D8A52B2F034F004C7FC6 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190D8A42B2F034F004C7FC6 /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +60,9 @@
 		3190D8902B1E6F27004C7FC6 /* ModelItemsForSearchViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelItemsForSearchViewItem.swift; sourceTree = "<group>"; };
 		3190D8942B28F5BE004C7FC6 /* PlayerViewFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewFullScreen.swift; sourceTree = "<group>"; };
 		3190D8982B2B854A004C7FC6 /* SearchMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicView.swift; sourceTree = "<group>"; };
+		3190D89A2B2F0197004C7FC6 /* SearchViewControllerUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerUIKit.swift; sourceTree = "<group>"; };
+		3190D8A22B2F02F3004C7FC6 /* SearchHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeader.swift; sourceTree = "<group>"; };
+		3190D8A42B2F034F004C7FC6 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3190D89F2B2F028C004C7FC6 /* SnapKit in Frameworks */,
+				3190D8A12B2F028C004C7FC6 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,7 @@
 			children = (
 				3190D85E2B1664BA004C7FC6 /* MyAppleMusicApp.swift */,
 				3190D8872B17B5B9004C7FC6 /* Example.swift */,
+				3190D89C2B2F01A0004C7FC6 /* SecondViewControllerUIKit */,
 				3190D86C2B1666F6004C7FC6 /* View */,
 				3190D8622B1664BD004C7FC6 /* Assets.xcassets */,
 				3190D8642B1664BD004C7FC6 /* Preview Content */,
@@ -177,6 +188,16 @@
 			path = SearchMusicView;
 			sourceTree = "<group>";
 		};
+		3190D89C2B2F01A0004C7FC6 /* SecondViewControllerUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3190D89A2B2F0197004C7FC6 /* SearchViewControllerUIKit.swift */,
+				3190D8A22B2F02F3004C7FC6 /* SearchHeader.swift */,
+				3190D8A42B2F034F004C7FC6 /* SearchCell.swift */,
+			);
+			path = SecondViewControllerUIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +214,10 @@
 			dependencies = (
 			);
 			name = MyAppleMusic;
+			packageProductDependencies = (
+				3190D89E2B2F028C004C7FC6 /* SnapKit */,
+				3190D8A02B2F028C004C7FC6 /* SnapKit-Dynamic */,
+			);
 			productName = MyAppleMusic;
 			productReference = 3190D85B2B1664BA004C7FC6 /* MyAppleMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 3190D8522B1664BA004C7FC6;
+			packageReferences = (
+				3190D89D2B2F028C004C7FC6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3190D85C2B1664BA004C7FC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -247,11 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3190D8A32B2F02F3004C7FC6 /* SearchHeader.swift in Sources */,
 				3190D8612B1664BA004C7FC6 /* ContentView.swift in Sources */,
 				3190D8862B167ED9004C7FC6 /* ModelItemsForSearch.swift in Sources */,
 				3190D8842B167E0C004C7FC6 /* LazyVGridViewSearch.swift in Sources */,
 				3190D8792B1668DC004C7FC6 /* RadioView.swift in Sources */,
 				3190D88D2B1E6EAE004C7FC6 /* LazyHGridViewSearchItemOne.swift in Sources */,
+				3190D89B2B2F0197004C7FC6 /* SearchViewControllerUIKit.swift in Sources */,
 				3190D8752B1667DE004C7FC6 /* ModelItems.swift in Sources */,
 				3190D8712B166789004C7FC6 /* LibraryView.swift in Sources */,
 				3190D8772B166862004C7FC6 /* PlayerView.swift in Sources */,
@@ -266,6 +296,7 @@
 				3190D8952B28F5BE004C7FC6 /* PlayerViewFullScreen.swift in Sources */,
 				3190D88A2B1E6B5F004C7FC6 /* SearchViewItem.swift in Sources */,
 				3190D87B2B166900004C7FC6 /* LazyHGridView.swift in Sources */,
+				3190D8A52B2F034F004C7FC6 /* SearchCell.swift in Sources */,
 				3190D8822B167C46004C7FC6 /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +501,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3190D89D2B2F028C004C7FC6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3190D89E2B2F028C004C7FC6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3190D89D2B2F028C004C7FC6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3190D8A02B2F028C004C7FC6 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3190D89D2B2F028C004C7FC6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3190D8532B1664BA004C7FC6 /* Project object */;
 }

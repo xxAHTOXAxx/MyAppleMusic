@@ -45,7 +45,8 @@ struct ContentView: View {
                             .foregroundColor(Color.gray)
                     }
                 
-                SearchView()
+                //SearchView()
+                SecondSearchViewUIKit()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
