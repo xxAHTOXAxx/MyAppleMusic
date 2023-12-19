@@ -123,3 +123,4 @@ extension SearchViewControllerUIKit: UICollectionViewDelegateFlowLayout {
         CGSize(width: view.frame.width, height: 40)
     }
 }
+

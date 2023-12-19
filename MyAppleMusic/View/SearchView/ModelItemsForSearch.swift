@@ -15,6 +15,13 @@ extension ModelItemsForSearch {
         ModelItemsForSearch(itemImage: "station5",  genreOfMusic: "Русские хиты"),
         ModelItemsForSearch(itemImage: "station6", genreOfMusic: "Музыка 00-х" ),
         ModelItemsForSearch(itemImage: "station7",  genreOfMusic: "Джаз"),
+        ModelItemsForSearch(itemImage: "station8",  genreOfMusic: "MIX"),
+        ModelItemsForSearch(itemImage: "station2",  genreOfMusic: "Рок"),
+        ModelItemsForSearch(itemImage: "station3", genreOfMusic: "Транс"),
+        ModelItemsForSearch(itemImage: "station4",  genreOfMusic: "Клубная музыка"),
+        ModelItemsForSearch(itemImage: "station5",  genreOfMusic: "Русские хиты"),
+        ModelItemsForSearch(itemImage: "station6", genreOfMusic: "Музыка 00-х" ),
+        ModelItemsForSearch(itemImage: "station7",  genreOfMusic: "Джаз"),
         ModelItemsForSearch(itemImage: "station8",  genreOfMusic: "MIX")
     ]
 }
